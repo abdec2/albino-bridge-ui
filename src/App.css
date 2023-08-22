@@ -1,0 +1,71 @@
+.flex-container {
+  display: flex;
+  background: radial-gradient(
+      66.32% 66.32% at 54.13% 113.95%,
+      rgba(108, 38, 255, 0.2) 0,
+      rgba(242, 89, 255, 0) 100%
+    ),
+    linear-gradient(
+      211.99deg,
+      rgba(65, 157, 241, 0.2) -4.17%,
+      rgba(45, 143, 234, 0) 68.7%
+    ),
+    radial-gradient(
+      100% 100% at 28.65% 0,
+      #d5bdf5 0,
+      rgba(250, 247, 254, 0) 100%
+    );
+}
+
+aside {
+  position: sticky;
+  top: 70px;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 20%;
+  box-shadow: 0 0 8px rgb(233, 229, 229);
+  box-sizing: border-box;
+}
+.aside2 {
+  width: 30%;
+}
+.flexTop {
+  display: none;
+}
+main {
+  /* padding-left: 20px; */
+  flex-grow: 1;
+}
+
+.content {
+  background: transparent;
+  height: 100vh;
+  margin-top: 20px;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+  /* margin-bottom: 20px; */
+}
+
+@media screen and (max-width: 1160px) {
+  .flexTop {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  .flex-container {
+    /* margin-top: 20px; */
+  }
+  aside {
+    display: none;
+  }
+}
